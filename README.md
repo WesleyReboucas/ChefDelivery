@@ -1,6 +1,6 @@
 
 <div >
-  <img src="imagens/github/Logo.png" width="1000px">
+  <img src="ChefDelivery/Assets.xcassets/github/ChefDeliveryBanner.png" width="1000px">
 </div>
 
 <p align="center">
@@ -23,30 +23,36 @@
 
 ## Projeto
 
-O ChefDelivery é um projeto idealizado pela 
+O Chef Delivery é um projeto idealizado pela 
 <a href="https://alura.com.br/"> **Alura** </a> 
 com a intensão de criar uma interface de um app IOS de delivery de comida.
 
 Assuntos abordados:
 
-- [x] Interface builder;
-- [x] Constraints;
-- [x] Size classes;
-- [x] UIStackView;
-- [x] Constraints x UIStackView;
-- [x] NSPredicate.
+- [x] UIKit vs Swift UI e o modelos imperativo e declarativo;
+- [x] Componentes com HStack e VStack;
+- [x] Carrossel com TabView;
+- [x] Navegação entre telas em SwiftUI;
+- [x] Telas interativas;
+- [x] Gerenciador de estado @State;
+- [x] Filtros;
+- [x] Fundamentos das animações no SwiftUI;
+- [x] Implementação do DragGesture para interações de arrastar;
+- [x] Efeitos de transição;
 
 ## Layout
 <div style="display: flex; flex-direction: 'row'; align-items: 'center';">
-	<img src="imagens/github/Screenshot 1.png" width="325px">	
-	<img src="imagens/github/Screenshot 2.png" width="325px">
-	<img src="imagens/github/Screenshot 3.png" width="325px">
-	<img src="imagens/github/Screenshot 4.png" width="325px">
+	<img src="ChefDelivery/Assets.xcassets/github/ScreenshotChefDelivery_1.png" width="325px">
+	<img src="ChefDelivery/Assets.xcassets/github/ScreenshotChefDelivery_3.png" width="325px">
+	<img src="ChefDelivery/Assets.xcassets/github/ScreenshotChefDelivery_4.png" width="325px">
+	<img src="ChefDelivery/Assets.xcassets/github/ScreenshotChefDelivery_5.png" width="325px">
+	<img src="ChefDelivery/Assets.xcassets/github/ScreenshotChefDelivery_6.png" width="325px">
+	<img src="ChefDelivery/Assets.xcassets/github/ScreenshotChefDelivery_7.png" width="325px">
 </div>
 
 ## Tecnologias
 
-- [Swift](https://www.swift.org/)
+- [Swift UI](https://www.swift.org/)
 
 ## Instalação
 
@@ -71,8 +77,6 @@ $ cd ChefDelivery
 <a href="https://cursos.alura.com.br/certificate/2ca04c07-6dfc-4e4d-a344-b87a32ce6c6c?lang=pt_BR">
 	<img src="https://img.shields.io/static/v1?label=Alura&message=2023&color=199ffc&style=flat"/>
 </a>
-
-
 
 
 ## :page_with_curl: Licencia 
