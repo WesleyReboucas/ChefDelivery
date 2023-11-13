@@ -21,7 +21,7 @@ let ordersMock: [OrderType] = [
 let storesMock: [StoreType] = [
     StoreType(
         id: 1,
-        name: "Monstro Burger",
+        name: "[Mock] Monstro Burger",
         logoImage: "monstro-burger-logo",
         headerImage: "monstro-burger-header",
         location: "Rua Principal, 123, São Paulo, SP",

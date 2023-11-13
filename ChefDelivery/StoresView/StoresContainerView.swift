@@ -5,6 +5,7 @@
 //  Created by Wesley Rebouças on 06/11/23.
 //
 
+
 import SwiftUI
 
 struct StoresContainerView: View {
@@ -15,10 +16,11 @@ struct StoresContainerView: View {
     @State private var maxDistanceFilter: Double = 100
     
     var filteredStores: [StoreType] {
-        return storesMock.filter { store in
+        return stores.filter { store in
             store.stars >= ratingFilter && (store.distance >= minDistanceFilter && store.distance < maxDistanceFilter)
         }
     }
+    var stores: [StoreType]
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -36,7 +38,7 @@ struct StoresContainerView: View {
                     }
                     
                     Divider()
-                    
+
                     ForEach(1...5, id: \.self) { rating in
                         Button {
                             ratingFilter = rating
@@ -57,9 +59,9 @@ struct StoresContainerView: View {
                     } label: {
                         Text("Limpar filtro")
                     }
-                    
+                
                     Divider()
-                    
+                
                     ForEach(Array(stride(from: 0, through: 20, by: 5)), id:\.self) { distance in
                         Button {
                             minDistanceFilter = Double(distance)
@@ -69,25 +71,25 @@ struct StoresContainerView: View {
                         }
                     }
                 }
+
             }
-            .padding(.bottom, 30)
+            .padding(.bottom, 20)
             
             VStack(alignment: .leading, spacing: 30) {
                 
                 if filteredStores.isEmpty {
-                    Text("Nenhum resultado encontrado.")
+                    Text("Nenhum resultado encontrado,")
                         .font(.title3)
                         .bold()
                         .foregroundColor(Color("ColorRed"))
                         .padding(.vertical, 32)
                         .frame(maxWidth: .infinity)
                 } else {
-                    ForEach(filteredStores) { mock in
+                    ForEach(filteredStores) { stores in
                         NavigationLink {
-                            StoreDetailView()
-                                .environmentObject(mock)
+                            StoreDetailView(store: stores)
                         } label: {
-                            StoreItemView(store: mock)
+                            StoreItemView(store: stores)
                         }
                     }
                 }
@@ -101,8 +103,38 @@ struct StoresContainerView: View {
 
 struct StoresContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        StoresContainerView()
+        StoresContainerView(stores: storesMock)
             .previewLayout(.sizeThatFits)
-            .environmentObject(storesMock[0])
     }
 }
+
+//
+//@State private var minDistanceFilter: Double = 0
+//@State private var maxDistanceFilter: Double = 100
+//
+//var filteredStores: [StoreType] {
+//    return storesMock.filter { store in
+//        store.stars >= ratingFilter && (store.distance >= minDistanceFilter && store.distance < maxDistanceFilter)
+//    }
+//}
+
+
+//Menu("Distância") {
+//    Button {
+//        minDistanceFilter = 0
+//        maxDistanceFilter = 100
+//    } label: {
+//        Text("Limpar filtro")
+//    }
+//    
+//    Divider()
+//    
+//    ForEach(Array(stride(from: 0, through: 20, by: 5)), id:\.self) { distance in
+//        Button {
+//            minDistanceFilter = Double(distance)
+//            maxDistanceFilter = Double(distance + 5)
+//        } label: {
+//            Text("De \(distance) até \(distance + 5) km")
+//        }
+//    }
+//}

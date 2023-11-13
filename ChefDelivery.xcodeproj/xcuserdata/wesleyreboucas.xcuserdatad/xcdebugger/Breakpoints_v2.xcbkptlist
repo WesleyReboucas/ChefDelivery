@@ -3,4 +3,54 @@
    uuid = "BF2BCADC-6DC4-4D55-ACE3-AE2CC9E1E604"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "20A1B1E5-3CE9-4D7C-98F2-E21E3E0AFD67"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChefDelivery/App/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "getStoresWithAlamofire()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "20A1B1E5-3CE9-4D7C-98F2-E21E3E0AFD67 - c9a60a64efacbc5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChefDelivery.ContentView_Previews.init() -&gt; ChefDelivery.ContentView_Previews"
+                  moduleName = "ChefDelivery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleyreboucas/DevProjects/ChefDelivery/ChefDelivery/App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "20A1B1E5-3CE9-4D7C-98F2-E21E3E0AFD67 - bf546ea4378ca08b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;ChefDelivery.StoreType&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ChefDelivery.ContentView.getStoresWithAlamofire() -&gt; ()"
+                  moduleName = "ChefDelivery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wesleyreboucas/DevProjects/ChefDelivery/ChefDelivery/App/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
