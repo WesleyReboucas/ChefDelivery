@@ -39,6 +39,10 @@ Assuntos abordados:
 - [x] Fundamentos das animações no SwiftUI;
 - [x] Implementação do DragGesture para interações de arrastar;
 - [x] Efeitos de transição;
+- [x] Estrutura de requisição HTTP e os métodos GET e POST
+- [x] Async/Await;
+- [x] Manipulação de JSON utilizando codable, decodable, encodable e coding keys
+- [x] Requisições básicas: nativa URLSession e a biblioteca Alamofire
 
 ## Layout
 <div style="display: flex; flex-direction: 'row'; align-items: 'center';">
