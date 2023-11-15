@@ -40,6 +40,7 @@ Assuntos abordados:
 - [x] Implementação do DragGesture para interações de arrastar;
 - [x] Efeitos de transição;
 - [x] Estrutura de requisição HTTP e os métodos GET e POST
+- [x] Apiary;
 - [x] Async/Await;
 - [x] Manipulação de JSON utilizando codable, decodable, encodable e coding keys
 - [x] Requisições básicas: nativa URLSession e a biblioteca Alamofire
@@ -57,6 +58,7 @@ Assuntos abordados:
 ## Tecnologias
 
 - [Swift UI](https://www.swift.org/)
+- [Apiary](https://app.apiary.io/)
 
 ## Instalação
 
